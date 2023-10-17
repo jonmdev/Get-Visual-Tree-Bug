@@ -46,8 +46,8 @@ namespace Get_Visual_Tree_Bug {
         }
         public void checkTargets(Point point) {
 
-            var elementsList = mainPage.GetVisualTreeElements(point); //needs to be on main thread
-            //var elementsList = abs.GetVisualTreeElements(point); //needs to be on main thread
+            var elementsList = mainPage.GetVisualTreeElements(point); //broken
+            //var elementsList = abs.GetVisualTreeElements(point); //broken
 
             for (int i = 0; i < elementsList.Count; i++) {
                 if (elementsList[i] as VisualElement != null) {
